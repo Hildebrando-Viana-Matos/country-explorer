@@ -43,7 +43,7 @@ This project integrates with the REST Countries API to display country data for 
 
 You can view the live demo of the project here:
 
-**[Live Demo](https://vercel-link-to-demo.com)**
+**[Live Demo](https://country-explorer-five.vercel.app/)**
 
 ## API Reference
 
