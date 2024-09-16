@@ -2,26 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --color-background: hsl(0, 0%, 98%); /* Light Mode Background */
+    --color-elements: hsl(0, 0%, 100%);  /* Light Mode Elements */
+    --color-input: hsl(0, 0%, 52%);      /* Light Mode Input */
+    --color-text: hsl(200, 15%, 8%);     /* Light Mode Text */
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  .dark {
+    --color-background: hsl(207, 26%, 17%);  /* Dark Mode Background */
+    --color-elements: hsl(209, 23%, 22%);    /* Dark Mode Elements */
+    --color-input: hsl(0, 0%, 52%);          /* Dark Mode Input */
+    --color-text: hsl(0, 0%, 100%);          /* Dark Mode Text */
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  body {
+    background-color: hsl(var(--color-background));
+    color: hsl(var(--color-text));
+  }
+
+  input {
+    background-color: hsl(var(--color-elements));
+    color: hsl(var(--color-text));
+    border-color: hsl(var(--color-input));
   }
 }

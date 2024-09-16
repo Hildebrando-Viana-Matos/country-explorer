@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Country Explorer Challenge
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+This project integrates with the REST Countries API to display country data for both desktop and mobile, as shown in the designs. It includes functionality for searching, filtering, and viewing details of countries, with support for light and dark modes.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features Implemented
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Homepage**: Lists all countries with search and filter capabilities.
+- **Details Page**: Shows detailed information for a selected country and allows navigation to bordering countries.
+- **Dark/Light Mode**: Toggle between light and dark themes.
+- **Error Handling**: Handles API failures with fallback data.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Next.js**
+- **TypeScript**
+- **REST Countries API**
+- **Tailwind CSS**
+- **React Hook Form & Zod**
+- **Axios**
+- **use-debounce**
+- **React Icons**
 
-## Learn More
+## Installation and Setup
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository.
+2. Install dependencies.
+3. Run the development server.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Homepage**: Search for a country or filter by region. Click on a country to view details.
+- **Details Page**: View detailed information and navigate to border countries.
+- **Dark/Light Mode**: Toggle using the button in the header.
 
-## Deploy on Vercel
+## Design and Responsiveness
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Follows the provided design guidelines for mobile and desktop.
+- Fully responsive layout.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Demo
+
+You can view the live demo of the project here:
+
+**[Live Demo](https://vercel-link-to-demo.com)**
+
+## API Reference
+
+Integrates with the [REST Countries API](https://restcountries.com/) for country data. A local `data.json` file is provided as fallback data.
+
+## Conclusion
+
+Showcases integration with an external API, dynamic form handling, and responsive design using Next.js and Tailwind CSS. Features include dark mode and debounced search.
